@@ -4,7 +4,7 @@ layout: default
 group: research
 ---
 
-<img class="img-fluid mx-auto d-block" src="/static/img/res1.png" alt="res1">
+<img class="img-fluid mx-auto d-block" src="/static/img/res2.png" alt="res1">
 
 
 # Research Areas
