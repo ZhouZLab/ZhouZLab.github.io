@@ -4,7 +4,7 @@ layout: default
 group: open positions
 ---
 
-<img class="img-fluid mx-auto d-block" src="/static/img/10.png" alt="10" style="paddig-bottom:0.5em;">
+<img class="img-fluid mx-auto d-block" src="/static/img/11.png" alt="11" style="paddig-bottom:0.5em;">
 
 
 # Open Positions
