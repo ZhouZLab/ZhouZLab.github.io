@@ -20,7 +20,7 @@ group: home
 
 ### What's new with us?
 _8-1-2025_ &nbsp; &nbsp; **We opened in 2025** <br>
-We are thrilled to announce the official launch of the Zhou Lab! 
+We are thrilled to announce the official launch of the Zhou Lab!" 
 
 
 
