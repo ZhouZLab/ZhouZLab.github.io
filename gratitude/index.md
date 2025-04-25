@@ -4,8 +4,8 @@ layout: default
 group: open positions
 ---
 
-<img class="img-fluid mx-auto d-block" src="/static/img/acknowledgements_long_meadow_and_islands_tom_curry.png" alt="Long Meadow and Islands by Tom Curry" style="paddig-bottom:0.5em;">
-Long Meadow and Islands by [Tom Curry](http://tomcurrymaineartist.com/)
+<img class="img-fluid mx-auto d-block" src="/static/img/open1.png" alt="open1" style="paddig-bottom:0.5em;">
+
 
 # Open Positions
 ---
