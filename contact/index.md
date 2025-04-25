@@ -4,7 +4,7 @@ layout: default
 group: contact
 ---
 
-<img class="img-fluid mx-auto d-block" src="/static/img/con1.png" alt="con1" style="paddig-bottom:0.5em;">
+<img class="img-fluid mx-auto d-block" src="/static/img/contact1.png" alt="contact1" style="paddig-bottom:0.5em;">
 
 
 # Contact the ZhouLab
