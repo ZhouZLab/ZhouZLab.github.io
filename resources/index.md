@@ -14,7 +14,7 @@ group: resources
 Once invited, you'll have access to essential resources to support your research.
 - **Manage Orders**: Track lab supplies and equipment orders to stay on top of deliveries
 - **Data Storage**: Store raw data, results, and analysis files, ensuring easy access and collaboration
-- **Track Research Materials**: Store and organize important documents, protocols, datasets, presentations, and experimental notes. Having all your materials in one place ensures that you can easily access them whenever you need, without the worry of misplacing vital information. Logo in your Google Drive [here](https://drive.google.com/drive/u/0/home).
+- **Track Research Materials**: Store and organize important documents, protocols, datasets, presentations, and experimental notes. Having all your materials in one place ensures that you can easily access them whenever you need, without the worry of misplacing vital information. Login to your Google Drive [here](https://drive.google.com/drive/u/0/home).
 
 
 ## ZhouLab Research Guide: Safety, Integrity, and Excellence
