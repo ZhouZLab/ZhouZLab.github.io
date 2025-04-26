@@ -12,19 +12,28 @@
             .full-width-image {
                 width: 100%;
                 height: auto;
+                display: block;
             }
-              /* Container for text content, max 90% width and centered */
-            .custom-container {
+             /* Container for text content */
+             .custom-container {
                 max-width: 90%;
-                margin: 0 auto; /* Center the content */
+                margin: 0 auto;
                 padding-top: 1em;
+                text-align: left;
             }   
         </style>
     </head>
+<body>
+<!-- Only the image is full-width -->
+    <div style="margin: 0; padding: 0;">
+        <img class="full-width-image" src="/static/img/home_still_harbor_tom_curry.png" alt="Still Harbor by Tom Curry" style="padding-bottom:0.5em;" />
+    </div>
 
-<div class="container-fluid p-0" style="text-align:left;">
-    <img class="full-width-image" src="/static/img/home_still_harbor_tom_curry.png" alt="Still Harbor by Tom Curry" style="padding-bottom:0.5em;"/>
-    Still Harbor by <a href="http://tomcurrymaineartist.com" > Tom Curry </a>
+    <!-- Everything else is centered in 90% width -->
+    <div class="custom-container">
+        <p>Still Harbor by <a href="http://tomcurrymaineartist.com">Tom Curry</a></p>
+
+    
     <div class="row">
         <div class="col-sm-8">
         	{{ content }}
@@ -35,3 +44,4 @@
     </div>
 </div>
 {% include footer.html %}
+</body>
