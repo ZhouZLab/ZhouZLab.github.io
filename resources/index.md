@@ -4,7 +4,7 @@ layout: default
 group: resources
 ---
 
-<img class="img-fluid mx-auto d-block" src="/static/img/resource1.png" alt="resource1" style="paddig-bottom:0.5em;">
+<img class="img-fluid mx-auto d-block" src="/static/img/resource2.png" alt="resource2" style="paddig-bottom:0.5em;">
 
 
 # Resources
