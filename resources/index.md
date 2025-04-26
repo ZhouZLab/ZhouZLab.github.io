@@ -9,9 +9,9 @@ group: resources
 
 # Resources
 ---
-## MPRA Protocol
+## ZhouLab Research Guide: Safety, Integrity, and Excellence
 
-If you want to follow our MPRA Protocol you can find a pdf document describing it [here](/static/pdf/ENCODE_MPRA_Protocol-Tewhey_Lab.pdf)
+our "ZhouLab Research Guide: Safety, Integrity, and Excellence" outlines the **core values, expectations, and best practices** that guide our collaborative, ethical, and innovative research environment. You can find a pdf document describing it [here](/static/pdf/ZhouLab Research Guide: Safety, Integrity, and Excellence.pdf)
 
 ## MPRA Processing Pipelines
 
