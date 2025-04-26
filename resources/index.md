@@ -11,7 +11,7 @@ group: resources
 ---
 ## ZhouLab Research Guide: Safety, Integrity, and Excellence
 
-our "ZhouLab Research Guide: Safety, Integrity, and Excellence" outlines the **core values, expectations, and best practices** that guide our collaborative, ethical, and innovative research environment. You can find a pdf document describing it [here](/static/pdf/ZhouLab Research Guide: Safety, Integrity, and Excellence.pdf)
+our "ZhouLab Research Guide: Safety, Integrity, and Excellence" outlines the **core values, expectations, and best practices** that guide our collaborative, ethical, and innovative research environment. You can find a pdf document describing it [here](/static/pdf/ZhouLab_Research_Guide.pdf)
 
 ## MPRA Processing Pipelines
 
