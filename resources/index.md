@@ -12,15 +12,14 @@ group: resources
 ## ZhouLab Google Drive
 
 Once invited, you'll have access to essential resources to support your research.
-- Manage Orders: Track lab supplies and equipment orders to stay on top of deliveries
-- Data Storage: Store raw data, results, and analysis files, ensuring easy access and collaboration
-- Track Research Materials: Store and organize important documents, protocols, datasets, presentations, and experimental notes. Having all your materials in one place ensures that you can easily access them whenever you need, without the worry of misplacing vital information
-Logo in your Google Drive [here](https://drive.google.com/drive/u/0/home).
+- **Manage Orders**: Track lab supplies and equipment orders to stay on top of deliveries
+- **Data Storage**: Store raw data, results, and analysis files, ensuring easy access and collaboration
+- **Track Research Materials**: Store and organize important documents, protocols, datasets, presentations, and experimental notes. Having all your materials in one place ensures that you can easily access them whenever you need, without the worry of misplacing vital information. Logo in your Google Drive [here](https://drive.google.com/drive/u/0/home).
 
 
 ## ZhouLab Research Guide: Safety, Integrity, and Excellence
 
-our "ZhouLab Research Guide: Safety, Integrity, and Excellence" outlines the **core values, expectations, and best practices** that guide our collaborative, ethical, and innovative research environment. You can find a pdf document describing it [here](/static/pdf/ZhouLab_Research_Guide.pdf).
+Our "ZhouLab Research Guide: Safety, Integrity, and Excellence" outlines the **core values, expectations, and best practices** that guide our collaborative, ethical, and innovative research environment. You can find a pdf document describing it [here](/static/pdf/ZhouLab_Research_Guide.pdf).
 
 ## How to Come Up with a Great Research Project
 
