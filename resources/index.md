@@ -20,7 +20,7 @@ Logo in your Google Drive [here](https://drive.google.com/drive/u/0/home).
 
 ## ZhouLab Research Guide: Safety, Integrity, and Excellence
 
-our "ZhouLab Research Guide: Safety, Integrity, and Excellence" outlines the **core values, expectations, and best practices** that guide our collaborative, ethical, and innovative research environment. You can find a pdf document describing it [here](/static/pdf/ZhouLab_Research_Guide.pdf)
+our "ZhouLab Research Guide: Safety, Integrity, and Excellence" outlines the **core values, expectations, and best practices** that guide our collaborative, ethical, and innovative research environment. You can find a pdf document describing it [here](/static/pdf/ZhouLab_Research_Guide.pdf).
 
 ## How to Come Up with a Great Research Project
 
@@ -30,7 +30,7 @@ A great way to begin is by diving into the literature. Reading the existing body
 
 Once you’ve identified an interesting and relevant question, the next steps involve refining that question into a clear hypothesis, organizing your ideas into logical aims, and considering the broader significance of your work. From there, you'll gradually shape a project that contributes new knowledge to your field and pushes the boundaries of what we know.
 
-This guide outlines the steps to help you come up with a great research project—from identifying a compelling question to designing your approach and ensuring feasibility. By following these principles, you'll be well on your way to crafting a project that can drive your academic journey and have a lasting impact. You can find a pdf document describing it [here](/static/pdf/How_to_Come_Up_with_a_Great_Research_Project.pdf)
+This guide outlines the steps to help you come up with a great research project—from identifying a compelling question to designing your approach and ensuring feasibility. By following these principles, you'll be well on your way to crafting a project that can drive your academic journey and have a lasting impact. You can find a pdf document describing it [here](/static/pdf/How_to_Come_Up_with_a_Great_Research_Project.pdf).
 
 
 ## External Tools & Platforms
