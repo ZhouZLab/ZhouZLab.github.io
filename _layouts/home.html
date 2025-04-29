@@ -10,40 +10,49 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
-    .col-sm-8 {
-        border-right: 2px solid #E5E5E5;
-    }
+        /* Remove margin and padding from the body and html */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-    .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 1em;
-        border-radius: 0.5em;
-    }
+        /* Remove padding/margin from .container-fluid */
+        .container-fluid.p-0 {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
 
-    nav.navbar {
-        margin-bottom: 0 !important;
-    }
+        /* Ensure the navbar doesn't have margin */
+        nav.navbar {
+            margin-bottom: 0 !important;
+        }
 
-    .container-fluid.p-0 {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+        /* Make the carousel span full width of the viewport */
+        #homeCarousel {
+            width: 100vw; /* Full viewport width */
+            margin: 0 !important;
+        }
 
-    #homeCarousel {
-        width: 100vw;
-    }
+        /* Style the carousel image */
+        .carousel-item img {
+            height: 600px;                /* Fixed height */
+            width: 100vw;                 /* Full viewport width */
+            object-fit: cover;            /* Crop the image to fill the space */
+            display: block;
+            margin: 0 auto;               /* Center the image horizontally */
+        }
 
-    .carousel-item img {
-        height: 600px;
-        width: 100vw;
-        object-fit: cover;
-        display: block;
-    }
-</style>
+        /* Ensure no horizontal scrolling */
+        body, html {
+            overflow-x: hidden;
+        }
+    </style>
 </head>
 
 <body>
-<!-- ✅ Full-width carousel only -->
+<!-- Full-width carousel -->
 <div class="container-fluid p-0">
     <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
@@ -51,7 +60,7 @@
                 <img src="/static/img/image1.jpg" class="d-block w-100" alt="Image 1">
                 <div class="carousel-caption d-none d-md-block"></div>
             </div>
-            <!-- add other images here -->
+            <!-- Add more images here as necessary -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -62,7 +71,7 @@
     </div>
 </div>
 
-<!-- ✅ Rest of your page in regular container -->
+<!-- Main content and sidebar -->
 <div class="container mt-4">
     <div class="row">
         <div class="col-sm-8">
