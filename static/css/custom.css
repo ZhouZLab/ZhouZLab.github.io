@@ -165,7 +165,7 @@ a.navbar-brand[href="/"] {  /* Targets only the lab name link */
 /* Mobile adjustment */
 @media (max-width: 767px) {
     a.navbar-brand[href="/"] {
-        font-size: 1.3rem !important;
+        font-size: 1.1rem !important;
     }
 }
 
