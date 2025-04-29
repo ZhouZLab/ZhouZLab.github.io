@@ -126,3 +126,19 @@ body {
 }
 */
 
+/* Force consistent navbar across all pages */
+.navbar {
+    margin-bottom: 0 !important;
+    padding: 0.5rem 1rem !important;
+}
+
+/* Make all page containers consistent */
+.container, .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Home page carousel adjustment */
+.home-page .carousel-item img {
+    height: 600px; /* Keep but isolate to home */
+}
