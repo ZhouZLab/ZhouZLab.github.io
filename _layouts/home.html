@@ -34,6 +34,22 @@
             object-fit: cover;       /* Crop to fit without distortion */
             width: 100%;             /* Keep full width */
         }
+
+        /* New CSS to remove margin between navbar and carousel */
+        #homeCarousel {
+            margin-top: 0 !important;   /* Remove top margin */
+        }
+
+        /* Ensure no padding or margin for the carousel's parent container */
+        .container-fluid.p-0 {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+
+        /* Ensure the navbar has no bottom margin */
+            nav.navbar {
+            margin-bottom: 0 !important;
+        }
     </style>
 </head>
 
