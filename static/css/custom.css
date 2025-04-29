@@ -142,3 +142,16 @@ body {
 .home-page .carousel-item img {
     height: 600px; /* Keep but isolate to home */
 }
+
+/* Navbar Title Size Adjustment */
+.navbar-brand {
+    font-size: 1.2rem !important; /* Increased from 1rem */
+    white-space: nowrap !important;
+}
+
+/* Mobile adjustment */
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.1rem !important; /* Increased from 0.9rem */
+    }
+}
