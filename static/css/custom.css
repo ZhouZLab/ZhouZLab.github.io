@@ -183,4 +183,11 @@ a.navbar-brand[href="/"] {  /* Targets only the lab name link */
     }
 }
 
-
+/* Home page mobile margins ONLY for text+sidebar */
+@media (max-width: 767.98px) {
+    body.home-page .container > .row > .col-sm-8,  /* Text content */
+    body.home-page .container > .row > .col-sm-4 {  /* Sidebar */
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+}
