@@ -38,6 +38,21 @@
         margin-right: 5px;
     }
 }
+
+  /* TEMPORARY NAVBAR FIX */
+  .navbar-brand {
+      white-space: nowrap !important;
+      font-size: 1rem !important;
+      min-width: 180px !important;
+  }
+  @media (max-width: 767px) {
+      .navbar-brand {
+          font-size: 0.9rem !important;
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+  }
+
 </style>
 
     
