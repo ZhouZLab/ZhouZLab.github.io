@@ -172,8 +172,8 @@ a.navbar-brand[href="/"] {  /* Targets only the lab name link */
 /* Make Home left and right margin match Research on mobile */
 @media (max-width: 767.98px) {
     .home-page .container {
-        padding-left: 15px !important;  /* Same as Research */
-        padding-right: 15px !important;
+        padding-left: 8px !important;  /* Same as Research */
+        padding-right: 8px !important;
     }
     
     /* Remove any conflicting styles */
