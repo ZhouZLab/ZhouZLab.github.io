@@ -23,14 +23,36 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+<style>
+    /* Mobile-responsive navbar fixes */
+    @media (max-width: 767px) {
+    .navbar-brand {
+        white-space: normal;
+        word-break: break-word;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    .navbar-brand img {
+        height: 35px !important;
+        margin-right: 5px;
+    }
+}
+</style>
+
+    
   </head>
 
   <body>
 
     <!-- Static navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000"; padding: 0;>
-        <a class="navbar-brand" href="https:zhouzlab.github.io"><img src="/static/img/zhoulogo8.png" style="max-height: 60px;></a>
-        <a class="navbar-brand" color="white" href="/">{{site.name}}</a>
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000000">
+    <a class="navbar-brand" href="https:zhouzlab.github.io">
+        <img src="/static/img/zhoulogo8.png" style="height: 40px;">
+    </a>
+    <a class="navbar-brand" href="/" style="color: white; max-width: 60%;">
+        {{site.name}}
+    </a>
     <!--     <a href="https://zhouzlab.github.io"><img class="inline-block navb-icon" src="/static/img/zhoulogo8.png"></a> -->
     <!--         <a href="https://gsbse.umaine.edu"><img class="inline-block navb-icon" src="/static/img/MAINE_crest_outline_4c.png"></a> -->
     <!--        <a href="https://medicine.tufts.edu"><img class="inline-block navb-icon" src="/static/img/Tufts_univ_white.png"></a> -->
