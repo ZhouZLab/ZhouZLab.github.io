@@ -145,13 +145,13 @@ body {
 
 /* Navbar Title Size Adjustment */
 .navbar-brand {
-    font-size: 1.2rem !important; /* Increased from 1rem */
+    font-size: 1.5rem !important; /* Increased from 1rem */
     white-space: nowrap !important;
 }
 
 /* Mobile adjustment */
 @media (max-width: 767px) {
     .navbar-brand {
-        font-size: 1.1rem !important; /* Increased from 0.9rem */
+        font-size: 1.3rem !important; /* Increased from 0.9rem */
     }
 }
