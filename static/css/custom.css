@@ -158,7 +158,7 @@ body {
 
 /* Specific targeting for the config.yml lab name */
 a.navbar-brand[href="/"] {  /* Targets only the lab name link */
-    font-size: 1.7rem !important; /* Adjust this value as needed */
+    font-size: 1.5rem !important; /* Adjust this value as needed */
     font-weight: 500;
 }
 
