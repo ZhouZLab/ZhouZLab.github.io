@@ -50,6 +50,30 @@
             nav.navbar {
             margin-bottom: 0 !important;
         }
+
+        /* Make the carousel and its container full-width */
+        #homeCarousel {
+            width: 100vw; /* Full viewport width */
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            margin-top: 0 !important;
+        }
+
+        /* Ensure no horizontal padding/margin in parent container */
+        .container-fluid.p-0 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        /* Keep carousel image height and make it span full width */
+        .carousel-item img {
+            height: 600px;         /* Keep existing height */
+            width: 100vw;          /* Full width of the viewport */
+            object-fit: cover;     /* Crop as needed to fill */
+            display: block;
+        }
     </style>
 </head>
 
