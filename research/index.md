@@ -4,7 +4,7 @@ layout: default
 group: research
 ---
 
-<img class="img-fluid mx-auto d-block" src="/static/img/res3.png" alt="res3">
+<img src="/static/img/res3.png" alt="res3" style="max-width:100%; height:auto; display:block; margin:0 auto;">
 
 
 # Research Areas
