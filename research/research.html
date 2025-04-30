@@ -5,13 +5,15 @@ group: research
 permalink: /research/
 ---
 
+<!-- Full-width image at top -->
 <div class="research-image-container">
   <img src="/static/img/res3.png" alt="res3">
 </div>
 
-<div class="research-content">
-    <h1>Research Areas</h1>
-    <hr>
+<!-- Text content with controlled margins -->
+<div class="research-text-content">
+  <hr>
+  <h1>Research Areas</h1>
 
     <p>Our lab investigates the cellular and molecular mechanisms driving inflammatory lung diseases, with a particular focus on the endothelial and epithelial cells that maintain lung homeostasis. We aim to uncover how cell-specific signaling networks orchestrate responses to injury and infection, ultimately shaping the lung's immune and repair landscape.</p>
 
@@ -39,13 +41,7 @@ permalink: /research/
 </div>
 
 <style>
-  /* Override for research page only */
-  .page-content {
-    padding: 0 !important;
-    max-width: 100% !important;
-  }
-
-  /* Full-width image container */
+  /* Full-width image breakout */
   .research-image-container {
     width: 100vw;
     position: relative;
@@ -53,17 +49,31 @@ permalink: /research/
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    margin-bottom: 2rem;
   }
 
-  /* Text content with reduced margins */
-  .research-content {
-    max-width: 800px; /* Adjust this value as needed */
+  /* Text content with tighter margins */
+  .research-text-content {
+    max-width: 90%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 5%;
   }
 
-  /* Ensure images stay full-width */
-  .research-content img {
+  /* Ensure headings and paragraphs inherit the container width */
+  .research-text-content h1,
+  .research-text-content h2,
+  .research-text-content h3,
+  .research-text-content h4,
+  .research-text-content p,
+  .research-text-content ul,
+  .research-text-content li {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Keep full-width images within text content */
+  .research-text-content img {
     width: 100%;
     height: auto;
     display: block;
