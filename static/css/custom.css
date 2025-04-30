@@ -168,13 +168,6 @@ a.navbar-brand[href="/"] {  /* Targets only the lab name link */
         font-size: 1.1rem !important;
     }
 }
-
-/* Make Home left and right margin match Research on mobile */
-@media (max-width: 767.98px) {
-    .home-page .container {
-        padding-left: 8px !important;  /* Same as Research */
-        padding-right: 8px !important;
-    }
     
     /* Remove any conflicting styles */
     .home-page .row {
