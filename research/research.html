@@ -6,12 +6,13 @@ permalink: /research/
 ---
 
 <!-- Full-width image at top -->
-<div class="research-image-container">
-  <img src="/static/img/res3.png" alt="res3">
+<div class="fullwidth-image">
+  <img src="/static/img/res3.png" alt="res3" style="width:100%; height:auto;">
 </div>
 
-<!-- Text content with controlled margins -->
-<div class="research-text-content">
+<!-- Text content with tight margins -->
+<div class="tight-text">
+
   <hr>
   <h1>Research Areas</h1>
 
@@ -41,41 +42,40 @@ permalink: /research/
 </div>
 
 <style>
-  /* Full-width image breakout */
-  .research-image-container {
+  /* Nuclear option to override ALL constraints */
+  #main-content {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Full-width image container */
+  .fullwidth-image {
     width: 100vw;
     position: relative;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    margin-bottom: 2rem;
   }
 
-  /* Text content with tighter margins */
-  .research-text-content {
-    max-width: 90%;
+  /* Text content with controlled width */
+  .tight-text {
+    max-width: 1000px; /* Adjust this value as needed */
     margin: 0 auto;
-    padding: 0 5%;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 
-  /* Ensure headings and paragraphs inherit the container width */
-  .research-text-content h1,
-  .research-text-content h2,
-  .research-text-content h3,
-  .research-text-content h4,
-  .research-text-content p,
-  .research-text-content ul,
-  .research-text-content li {
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  /* Keep full-width images within text content */
-  .research-text-content img {
-    width: 100%;
-    height: auto;
-    display: block;
+  /* Remove any residual padding */
+  .tight-text p,
+  .tight-text h1,
+  .tight-text h2,
+  .tight-text h3,
+  .tight-text h4,
+  .tight-text ul,
+  .tight-text li {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 </style>
