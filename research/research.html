@@ -5,16 +5,17 @@ group: research
 permalink: /research/
 ---
 
-<!-- Full-width image at top -->
-<div class="fullwidth-image">
-  <img src="/static/img/res3.png" alt="res3" style="width:100%; height:auto;">
-</div>
+<div class="research-page">
+  <!-- Full-width image -->
+  <div class="fullwidth-breakout">
+    <img src="/static/img/res3.png" alt="res3" style="width:100%; height:auto;">
+  </div>
 
-<!-- Text content with tight margins -->
-<div class="tight-text">
-
-  <hr>
-  <h1>Research Areas</h1>
+  <!-- Text content container -->
+  <div class="container">
+    <div class="tight-text">
+      <h1>Research Areas</h1>
+      <hr>
 
     <p>Our lab investigates the cellular and molecular mechanisms driving inflammatory lung diseases, with a particular focus on the endothelial and epithelial cells that maintain lung homeostasis. We aim to uncover how cell-specific signaling networks orchestrate responses to injury and infection, ultimately shaping the lung's immune and repair landscape.</p>
 
@@ -39,18 +40,22 @@ permalink: /research/
     <h4>Endothelial Mechanosensitivity and Its Role in Vascular Inflammation</h4>
 
     <p>We explores the intricate roles of endothelial mechanosensitive gene expression in vascular inflammatory progression, emphasizing the dynamic and site-specific activation of mechanosensitive genes in response to blood flow within the vasculature. This research delves into how mechanical forces, such as shear stress, influence endothelial cell behavior, gene regulation, and the development of vascular pathologies, including atherosclerosis and other inflammatory vascular diseases. By understanding these mechanisms, we aim to identify novel targets for therapeutic intervention in cardiovascular conditions.</p>
+      </div>
+   </div>
 </div>
 
 <style>
-  /* Nuclear option to override ALL constraints */
-  #main-content {
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
+  /* Nuclear override for research page only */
+  @media (min-width: 768px) {
+    .research-page .container {
+      max-width: 100% !important;
+      padding-left: 5% !important;
+      padding-right: 5% !important;
+    }
   }
 
-  /* Full-width image container */
-  .fullwidth-image {
+  /* Full-width image breakout */
+  .research-page .fullwidth-breakout {
     width: 100vw;
     position: relative;
     left: 50%;
@@ -59,22 +64,15 @@ permalink: /research/
     margin-right: -50vw;
   }
 
-  /* Text content with controlled width */
-  .tight-text {
-    max-width: 1000px; /* Adjust this value as needed */
+  /* Text content with tighter margins */
+  .research-page .tight-text {
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+    padding: 0 15px;
   }
 
-  /* Remove any residual padding */
-  .tight-text p,
-  .tight-text h1,
-  .tight-text h2,
-  .tight-text h3,
-  .tight-text h4,
-  .tight-text ul,
-  .tight-text li {
+  /* Remove residual padding from text elements */
+  .research-page .tight-text > * {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
