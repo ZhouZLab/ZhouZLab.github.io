@@ -6,7 +6,7 @@ group: contact
 
 
 
-<img class="img-fluid mx-auto d-block" src="/static/img/contact1.jpg" alt="contact1" style="paddig-bottom:0.5em;">
+<img class="img-fluid mx-auto d-block" src="/static/img/contact-linkedin.jpg" alt="contact1" style="paddig-bottom:0.5em;">
 
 
 # Contact the ZhouLab
