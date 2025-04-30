@@ -5,16 +5,13 @@ group: research
 permalink: /research/
 ---
 
-<div class="research-page">
-  <!-- Full-width image with proper breakout -->
-  <div class="fullwidth-breakout">
-    <img src="/static/img/res3.png" alt="res3" class="img-fluid">
-  </div>
+<div class="research-content">
+    <!-- Image with responsive breakout -->
+    <div style="width:100vw; margin-left:calc(-50vw + 50%);">
+        <img src="/static/img/res3.png" alt="res3" 
+             style="width:100%; height:auto; display:block;">
+    </div>
 
-  <!-- Proper Bootstrap container structure -->
-  <div class="container px-0">
-    <div class="row justify-content-center">
-      <div class="tight-text col-12 col-lg-10 col-xl-8">
         <h1>Research Areas</h1>
         <hr>
 
@@ -49,32 +46,14 @@ permalink: /research/
 </div>
 
 <style>
-  /* Full-width image breakout - guaranteed to work */
-  .fullwidth-breakout {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 2rem 0;
-  }
-  
-  /* Text container with precise control */
-  .tight-text {
-    max-width: 100%;
-    padding: 0 1.5rem !important;
-  }
-  
-  /* Override Bootstrap's default container padding */
-  .research-page .container {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    max-width: 100% !important;
-  }
-  
-  /* Mobile responsiveness */
-  @media (max-width: 767.98px) {
-    .tight-text {
-      padding: 0 1rem !important;
+    /* Nuclear reset for research page only */
+    main .research-content {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
     }
-  }
+    .research-content img {
+        width: 100% !important;
+        height: auto !important;
+    }
 </style>
