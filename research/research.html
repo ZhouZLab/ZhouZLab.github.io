@@ -44,33 +44,40 @@ permalink: /research/
 
 <style>
     /* Nuclear reset for research page only */
-    main .research-content {
+    .research-content {
         max-width: 100% !important;
         padding: 0 !important;
         margin: 0 !important;
     }
+    
+    /* Responsive images */
     .research-content img {
         width: 100% !important;
+        max-width: 100% !important;
         height: auto !important;
+        display: block;
     }
-    /* Targets ONLY text content in research page */
-  .research-content h1,
-  .research-content h4,
-  .research-content p,
-  .research-content ul,
-  .research-content li {
-    max-width: 90% !important;
-    margin-left: 5% !important;
-    margin-right: 5% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-   }
-
-   /* Keep images full-width */
-   .research-content img,
-   .research-content div {
-    max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-   }
+    
+    /* Text content styling */
+    .research-content h1,
+    .research-content h2,
+    .research-content h3,
+    .research-content h4,
+    .research-content p,
+    .research-content ul,
+    .research-content li,
+    .research-content hr {
+        max-width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    /* Special case for full-width elements */
+    .research-content > div:first-child {
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
 </style>
