@@ -3,9 +3,7 @@ title: Research in the ZhouLab
 layout: default
 group: research
 ---
-<div style="border:2px solid red; padding:10px;">
-    <img src="/static/img/res3.png" alt="res3" style="width:100%; max-width:100%; height:auto;">
-</div>
+
 <img src="/static/img/res3.png" alt="res3" style="width:100% !important; max-width:100% !important; height:auto !important; display:block !important; margin:0 auto;">
 
 
