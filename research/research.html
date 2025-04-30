@@ -4,82 +4,69 @@ layout: default
 group: research
 permalink: /research/
 ---
+
 <div class="forced-height-container">
   <img src="/static/img/res3.png" alt="res3" class="fixed-height-image">
 </div>
-<br>
-        <h1>Research Areas</h1>
-        <hr>
-        <!-- Your content remains exactly the same -->
-        <p>Our lab investigates the cellular and molecular mechanisms driving inflammatory lung diseases, with a particular focus on the endothelial and epithelial cells that maintain lung homeostasis. We aim to uncover how cell-specific signaling networks orchestrate responses to injury and infection, ultimately shaping the lung's immune and repair landscape.</p>
 
-        <p>We employ cutting-edge molecular biology techniques, high-throughput bioinformatics, and advanced in vivo models to dissect disease mechanisms at single-cell and systems levels. In parallel, we develop innovative drug delivery platforms, including mRNA-loaded lipid nanoparticles, to achieve precise, cell-targeted therapies for conditions such as acute respiratory distress syndrome (ARDS), viral pneumonia, and chronic lung inflammation.</p>
+<div class="research-content">
+  <h1>Research Areas</h1>
+  <hr>
+  
+  <p>Our lab investigates the cellular and molecular mechanisms driving inflammatory lung diseases, with a particular focus on the endothelial and epithelial cells that maintain lung homeostasis. We aim to uncover how cell-specific signaling networks orchestrate responses to injury and infection, ultimately shaping the lung's immune and repair landscape.</p>
 
-        <p>Our interdisciplinary approach integrates vascular biology, immunology, and nanomedicine, with the goal of translating fundamental discoveries into next-generation therapeutics for patients with severe lung disease.</p>
+  <p>We employ cutting-edge molecular biology techniques, high-throughput bioinformatics, and advanced in vivo models to dissect disease mechanisms at single-cell and systems levels. In parallel, we develop innovative drug delivery platforms, including mRNA-loaded lipid nanoparticles, to achieve precise, cell-targeted therapies for conditions such as acute respiratory distress syndrome (ARDS), viral pneumonia, and chronic lung inflammation.</p>
 
-        <p><em>To accomplish this our work spans several areas of interest:</em></p>
+  <p>Our interdisciplinary approach integrates vascular biology, immunology, and nanomedicine, with the goal of translating fundamental discoveries into next-generation therapeutics for patients with severe lung disease.</p>
 
-        <h4>Lung Biology in Inflammation and Injury</h4>
+  <p><em>To accomplish this our work spans several areas of interest:</em></p>
 
-        <p>We investigate the interplay between vascular and lung epithelial cells during the initiation, progression, and resolution of inflammatory and injury responses in the lung. By using advanced molecular and cellular techniques alongside in vivo models of lung disease, our goal is to unravel the mechanistic pathways that drive vascular dysfunction, barrier disruption, and immune dysregulation.</p>
+  <h4>Lung Biology in Inflammation and Injury</h4>
 
-        <p>Through this work, we aim to identify novel therapeutic targets that can modulate inflammation, promote tissue repair, and restore lung function in diseases such as ARDS, viral pneumonia, and other forms of acute or chronic lung injury.</p>
+  <p>We investigate the interplay between vascular and lung epithelial cells during the initiation, progression, and resolution of inflammatory and injury responses in the lung. By using advanced molecular and cellular techniques alongside in vivo models of lung disease, our goal is to unravel the mechanistic pathways that drive vascular dysfunction, barrier disruption, and immune dysregulation.</p>
 
-        <h4>Nanomedicine, Drug Delivery, and Gene Therapy</h4>
+  <p>Through this work, we aim to identify novel therapeutic targets that can modulate inflammation, promote tissue repair, and restore lung function in diseases such as ARDS, viral pneumonia, and other forms of acute or chronic lung injury.</p>
 
-        <p>We develop cutting-edge nanomedicine platforms to enable cell-specific delivery of therapeutic agents to the lung. Our work integrates principles of bioengineering, biomaterials science, and gene therapy to design targeted drug delivery systems, with a focus on lipid nanoparticles and other advanced carriers for mRNA and nucleic acid therapeutics.</p>
+  <h4>Nanomedicine, Drug Delivery, and Gene Therapy</h4>
 
-        <p>By tailoring nanocarriers to selectively target specific cell types, such as endothelial or epithelial cells, we aim to enhance therapeutic precision, minimize off-target effects, and improve outcomes in inflammatory and infectious lung diseases. This research bridges engineering and biology to pioneer next-generation, lung-targeted therapies for conditions like ARDS, pulmonary infections, and fibrotic lung disorders.</p>
+  <p>We develop cutting-edge nanomedicine platforms to enable cell-specific delivery of therapeutic agents to the lung. Our work integrates principles of bioengineering, biomaterials science, and gene therapy to design targeted drug delivery systems, with a focus on lipid nanoparticles and other advanced carriers for mRNA and nucleic acid therapeutics.</p>
 
-        <h4>Endothelial Mechanosensitivity and Its Role in Vascular Inflammation</h4>
+  <p>By tailoring nanocarriers to selectively target specific cell types, such as endothelial or epithelial cells, we aim to enhance therapeutic precision, minimize off-target effects, and improve outcomes in inflammatory and infectious lung diseases. This research bridges engineering and biology to pioneer next-generation, lung-targeted therapies for conditions like ARDS, pulmonary infections, and fibrotic lung disorders.</p>
 
-        <p>We explores the intricate roles of endothelial mechanosensitive gene expression in vascular inflammatory progression, emphasizing the dynamic and site-specific activation of mechanosensitive genes in response to blood flow within the vasculature. This research delves into how mechanical forces, such as shear stress, influence endothelial cell behavior, gene regulation, and the development of vascular pathologies, including atherosclerosis and other inflammatory vascular diseases. By understanding these mechanisms, we aim to identify novel targets for therapeutic intervention in cardiovascular conditions.</p>
-        
-      </div>
-    </div>
-  </div>
+  <h4>Endothelial Mechanosensitivity and Its Role in Vascular Inflammation</h4>
+
+  <p>We explores the intricate roles of endothelial mechanosensitive gene expression in vascular inflammatory progression, emphasizing the dynamic and site-specific activation of mechanosensitive genes in response to blood flow within the vasculature. This research delves into how mechanical forces, such as shear stress, influence endothelial cell behavior, gene regulation, and the development of vascular pathologies, including atherosclerosis and other inflammatory vascular diseases. By understanding these mechanisms, we aim to identify novel targets for therapeutic intervention in cardiovascular conditions.</p>
 </div>
 
 <style>
-    /* Nuclear reset for research page only */
-    main .research-content {
-        max-width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    .research-content img {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-  /* Nuclear option - overrides ALL conflicting styles */
+  /* Full-width image container */
   .forced-height-container {
-    width: 100vw !important;
-    position: relative !important;
-    left: 50% !important;
-    right: 50% !important;
-    margin-left: -50vw !important;
-    margin-right: -50vw !important;
-    height: 500px !important;
-    overflow: hidden !important;
-    background: #f5f5f5; /* Optional: shows container bounds */
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 2rem;
   }
   
   .fixed-height-image {
-    width: 100% !important;
-    height: 500px !important;
-    object-fit: cover !important;
-    display: block !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  
-  /* Mobile adjustment if needed */
+
+  /* Content container */
+  .research-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* Mobile responsiveness */
   @media (max-width: 768px) {
-    .forced-height-container,
-    .fixed-height-image {
-      height: 300px !important; /* Maintains height on mobile */
+    .forced-height-container {
+      height: 300px;
     }
   }
 </style>
-
