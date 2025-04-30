@@ -4,12 +4,9 @@ layout: default
 group: research
 permalink: /research/
 ---
-<div class="research-content">
-    <!-- Image with responsive breakout -->
-    <div style="width:100vw; margin-left:calc(-50vw + 50%);">
-        <img src="/static/img/res3.png" alt="res3" 
-             style="width:100%; height:300px; object-fit:cover; display:block;">
-    </div>
+<div class="forced-height-container">
+  <img src="/static/img/res3.png" alt="res3" class="fixed-height-image">
+</div>
 
         <h1>Research Areas</h1>
         <hr>
@@ -55,4 +52,35 @@ permalink: /research/
         width: 100% !important;
         height: auto !important;
     }
+
+  /* Nuclear option - overrides ALL conflicting styles */
+  .forced-height-container {
+    width: 100vw !important;
+    position: relative !important;
+    left: 50% !important;
+    right: 50% !important;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    height: 300px !important;
+    overflow: hidden !important;
+    background: #f5f5f5; /* Optional: shows container bounds */
+  }
+  
+  .fixed-height-image {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: cover !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* Mobile adjustment if needed */
+  @media (max-width: 768px) {
+    .forced-height-container,
+    .fixed-height-image {
+      height: 300px !important; /* Maintains height on mobile */
+    }
+  }
 </style>
+
