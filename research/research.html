@@ -21,21 +21,41 @@ permalink: /research/
 
   <p><em>To accomplish this our work spans several areas of interest:</em></p>
 
-  <h4>Lung Biology in Inflammation and Injury</h4>
+  <!-- First Research Area with Image -->
+  <div class="research-section">
+    <div class="research-text">
+      <h4>Lung Biology in Inflammation and Injury</h4>
+      <p>We investigate the interplay between vascular and lung epithelial cells during the initiation, progression, and resolution of inflammatory and injury responses in the lung. By using advanced molecular and cellular techniques alongside in vivo models of lung disease, our goal is to unravel the mechanistic pathways that drive vascular dysfunction, barrier disruption, and immune dysregulation.</p>
+      <p>Through this work, we aim to identify novel therapeutic targets that can modulate inflammation, promote tissue repair, and restore lung function in diseases such as ARDS, viral pneumonia, and other forms of acute or chronic lung injury.</p>
+    </div>
+    <div class="research-image">
+      <img src="/static/img/lung-biology.jpg" alt="Lung Biology Illustration" style="width:100%; height:auto; border-radius:8px;">
+    </div>
+  </div>
 
-  <p>We investigate the interplay between vascular and lung epithelial cells during the initiation, progression, and resolution of inflammatory and injury responses in the lung. By using advanced molecular and cellular techniques alongside in vivo models of lung disease, our goal is to unravel the mechanistic pathways that drive vascular dysfunction, barrier disruption, and immune dysregulation.</p>
+  <!-- First Research Area with Image -->
+  <div class="research-section">
+    <div class="research-text">
+      <h4>Nanomedicine, Drug Delivery, and Gene Therapy</h4>
+      <p>We develop cutting-edge nanomedicine platforms to enable cell-specific delivery of therapeutic agents to the lung. Our work integrates principles of bioengineering, biomaterials science, and gene therapy to design targeted drug delivery systems, with a focus on lipid nanoparticles and other advanced carriers for mRNA and nucleic acid therapeutics.</p>
+      <p>By tailoring nanocarriers to selectively target specific cell types, such as endothelial or epithelial cells, we aim to enhance therapeutic precision, minimize off-target effects, and improve outcomes in inflammatory and infectious lung diseases. This research bridges engineering and biology to pioneer next-generation, lung-targeted therapies for conditions like ARDS, pulmonary infections, and fibrotic lung disorders.</p>
+    </div>
+    <div class="research-image">
+      <img src="/static/img/lung-biology.jpg" alt="Lung Biology Illustration" style="width:100%; height:auto; border-radius:8px;">
+    </div>
+  </div>
 
-  <p>Through this work, we aim to identify novel therapeutic targets that can modulate inflammation, promote tissue repair, and restore lung function in diseases such as ARDS, viral pneumonia, and other forms of acute or chronic lung injury.</p>
-
-  <h4>Nanomedicine, Drug Delivery, and Gene Therapy</h4>
-
-  <p>We develop cutting-edge nanomedicine platforms to enable cell-specific delivery of therapeutic agents to the lung. Our work integrates principles of bioengineering, biomaterials science, and gene therapy to design targeted drug delivery systems, with a focus on lipid nanoparticles and other advanced carriers for mRNA and nucleic acid therapeutics.</p>
-
-  <p>By tailoring nanocarriers to selectively target specific cell types, such as endothelial or epithelial cells, we aim to enhance therapeutic precision, minimize off-target effects, and improve outcomes in inflammatory and infectious lung diseases. This research bridges engineering and biology to pioneer next-generation, lung-targeted therapies for conditions like ARDS, pulmonary infections, and fibrotic lung disorders.</p>
-
-  <h4>Endothelial Mechanosensitivity and Its Role in Vascular Inflammation</h4>
-
-  <p>We explores the intricate roles of endothelial mechanosensitive gene expression in vascular inflammatory progression, emphasizing the dynamic and site-specific activation of mechanosensitive genes in response to blood flow within the vasculature. This research delves into how mechanical forces, such as shear stress, influence endothelial cell behavior, gene regulation, and the development of vascular pathologies, including atherosclerosis and other inflammatory vascular diseases. By understanding these mechanisms, we aim to identify novel targets for therapeutic intervention in cardiovascular conditions.</p>
+ <!-- First Research Area with Image -->
+  <div class="research-section">
+    <div class="research-text">
+       <h4>Endothelial Mechanosensitivity and Its Role in Vascular Inflammation</h4>
+       <p>We explores the intricate roles of endothelial mechanosensitive gene expression in vascular inflammatory progression, emphasizing the dynamic and site-specific activation of mechanosensitive genes in response to blood flow within the vasculature. This research delves into how mechanical forces, such as shear stress, influence endothelial cell behavior, gene regulation, and the development of vascular pathologies, including atherosclerosis and other inflammatory vascular diseases. By understanding these mechanisms, we aim to identify novel targets for therapeutic intervention in cardiovascular conditions.</p>
+    </div>
+    <div class="research-image">
+      <img src="/static/img/lung-biology.jpg" alt="Lung Biology Illustration" style="width:100%; height:auto; border-radius:8px;">
+    </div>
+  </div>
+  
 </div>
 
 <style>
@@ -62,11 +82,38 @@ permalink: /research/
     margin: 0 auto;
     padding: 0 20px;
   }
-
+  
+  /* Research section with image layout */
+  .research-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .research-text {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .research-image {
+    flex: 1;
+    min-width: 0;
+    align-self: center;
+  }
   /* Mobile responsiveness */
   @media (max-width: 768px) {
     .forced-height-container {
       height: 300px;
+
+  .research-section {
+      flex-direction: column;
+    }
+    
+  .research-image {
+      order: -1; /* Image above text on mobile */
+      margin-bottom: 20px;
+      width: 100%;
     }
   }
 </style>
