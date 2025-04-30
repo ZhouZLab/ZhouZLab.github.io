@@ -22,6 +22,9 @@ group: home
 _8-1-2025_ &nbsp; &nbsp; **We opened in 2025** <br>
 We are thrilled to announce the official launch of the Zhou Lab! 
 
+_3-28-2025_ &nbsp; &nbsp; **Our work highlighted in Science News** <br>
+Zhengjie was interviewed by a Science reportor and his pre-printed research on precision nanomedicine targeting vascular complications and inflammatory lung was highlighted in Science News! 
+
 
 
 
