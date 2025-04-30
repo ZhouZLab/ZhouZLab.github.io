@@ -2,13 +2,14 @@
 title: Research in the ZhouLab
 layout: default
 group: research
+permalink: /research/
 ---
 
 <div class="research-content">
-    <!-- Responsive Image with Container Breakout -->
-    <div style="width:100%; overflow:hidden; margin:0; padding:0;">
+    <!-- Image with responsive breakout -->
+    <div style="width:100vw; margin-left:calc(-50vw + 50%);">
         <img src="/static/img/res3.png" alt="res3" 
-             style="width:100% !important; max-width:100% !important; height:auto !important; display:block !important; margin:0 auto;">
+             style="width:100%; height:auto; display:block;">
     </div>
 
     <!-- Markdown Content Conversion -->
@@ -41,22 +42,14 @@ group: research
 </div>
 
 <style>
-    /* Nuclear Option CSS - Overrides all constraints */
-    .research-content {
+    /* Nuclear reset for research page only */
+    main .research-content {
         max-width: 100% !important;
         padding: 0 !important;
         margin: 0 !important;
     }
     .research-content img {
         width: 100% !important;
-        max-width: 100% !important;
         height: auto !important;
-    }
-    /* Ensure headings/text maintain original spacing */
-    .research-content h1,
-    .research-content h4,
-    .research-content p {
-        padding: 0 15px; /* Matches typical Markdown padding */
-        margin: 1em 0; /* Preserves Markdown spacing */
     }
 </style>
