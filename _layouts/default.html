@@ -2,6 +2,24 @@
 
 <head>
   {% include analytics.html %}
+  <!-- Add this conditional CSS only for the research page -->
+  {% if page.group == "research" %}
+  <style>
+    /* Force full-width container for research pages */
+    .research-content, 
+    .research-content .container {
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    /* Make images responsive */
+    .research-content img {
+      width: 100% !important;
+      height: auto !important;
+      display: block;
+    }
+  </style>
+  {% endif %}
 </head>
 
 {{content}}
