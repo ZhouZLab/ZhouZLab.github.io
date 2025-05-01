@@ -5,96 +5,141 @@ group: contact
 permalink: /contact/
 ---
 
-<!-- Full-width image container -->
-<div style="width: 100vw;
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 500px;
-            overflow: hidden;
-            margin-bottom: 1.5rem;">
-  <img src="/static/img/contact-linkedin2.jpg" alt="contact-linkedin2" 
-       style="width: 100%;
-              height: 100%;
-              object-fit: cover;
-              object-position: center;">
+<!-- Full-width image container - Fixed version -->
+<div class="header-image-container">
+  <img src="/static/img/contact-linkedin2.jpg" alt="contact-linkedin2" class="header-image">
 </div>
 
-<div class="contact-content" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+<div class="contact-container">
   <h1>Contact the ZhouLab</h1>
-  <hr style="border-top: 1px solid #e0e0e0; margin: 20px 0;">
+  <hr class="content-divider">
 
-  <div class="row">
-    <div class="col-md-4">
+  <div class="contact-info-row">
+    <div class="contact-info-col">
       <h4>Lab Area</h4>
       3500 N. Broad St, Room 1155 <br>
       Philadelphia, PA, 19140 <br>
       Tel: 405-541-7266
     </div>
 
-    <div class="col-md-4">
+    <div class="contact-info-col">
       <h4>Xinlin Huang</h4>
       Research Assistant <br>
       Email: hxl0631@gmail.com <br>
       Tel: 405-510-8275
     </div>
 
-    <div class="col-md-4">
+    <div class="contact-info-col">
       <!-- Empty column maintained for layout consistency -->
     </div>
   </div>
 
-  <!-- Google Map + Building Image Section -->
-  <div class="row" style="margin-top: 40px;">
-    <!-- Google Map (Left) -->
-    <div class="col-md-6" style="padding-right: 15px;">
-      <div style="height: 400px;">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.0825741956414!2d-75.15464692328615!3d40.00660307150855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7f836fd5121%3A0xda5ab136cef2be17!2s3500%20N%20Broad%20St%2C%20Philadelphia%2C%20PA%2019140!5e0!3m2!1sen!2sus!4v1746120889890!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+  <!-- Google Map + Building Image Section - Fixed -->
+  <div class="map-building-container">
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3056.0825741956414!2d-75.15464692328615!3d40.00660307150855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7f836fd5121%3A0xda5ab136cef2be17!2s3500%20N%20Broad%20St%2C%20Philadelphia%2C%20PA%2019140!5e0!3m2!1sen!2sus!4v1746120889890!5m2!1sen!2sus" 
+              class="google-map" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
 
-    <!-- Building Image (Right) -->
-    <div class="col-md-6" style="padding-left: 15px;">
-      <div style="height: 400px; overflow: hidden;">
-        <img src="/static/img/Lewis.jpg" alt="Lab Building" 
-             style="width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: center;">
-      </div>
+    <div class="building-container">
+      <img src="/static/img/Lewis.jpg" alt="Lab Building" class="building-image">
     </div>
   </div>
 </div>
 
 <style>
-  /* Ensure Bootstrap columns work properly */
-  .row {
+  /* Base Styles */
+  .header-image-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px; /* Added bottom padding */
+  }
+  
+  .content-divider {
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+  }
+  
+  /* Contact Info Section */
+  .contact-info-row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin: 0 -15px;
   }
-  .col-md-4, .col-md-6 {
-    padding-right: 15px;
-    padding-left: 15px;
+  
+  .contact-info-col {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding: 0 15px;
+    margin-bottom: 20px;
   }
-  .col-md-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+  
+  /* Map & Building Section */
+  .map-building-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px -15px 0;
   }
-  .col-md-6 {
+  
+  .map-container, 
+  .building-container {
     flex: 0 0 50%;
     max-width: 50%;
+    padding: 0 15px;
+    height: 400px; /* Fixed height */
   }
-
-  /* Responsive adjustments */
+  
+  .google-map,
+  .building-image {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .building-image {
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  /* Responsive Adjustments */
   @media (max-width: 768px) {
-    .col-md-4, .col-md-6 {
+    .contact-info-col,
+    .map-container,
+    .building-container {
       flex: 0 0 100%;
       max-width: 100%;
-      padding-right: 0;
-      padding-left: 0;
+      padding: 0;
+    }
+    
+    .map-container,
+    .building-container {
+      height: 300px;
       margin-bottom: 20px;
     }
-  }          
+    
+    .contact-info-col {
+      margin-bottom: 15px;
+    }
+  }
 </style>
