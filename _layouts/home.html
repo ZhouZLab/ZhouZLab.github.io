@@ -61,6 +61,35 @@
         margin-bottom: 0 !important;
     }
 
+    /* Consistent content container */
+    .main-content-container {
+        max-width: 900px; /* Match research page width */
+        margin: 0 auto;
+        padding: 0 20px; /* Match research page padding */
+    }
+
+    /* Override Bootstrap container */
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }    
+
+    /* Consistent footer styling */
+    footer {
+        padding: 20px 0;
+        text-align: left;
+        margin-top: 40px;
+        border-top: 1px solid #eee;
+    }
+
+    /* Force left alignment */
+    footer .container {
+        text-align: left !important;
+        padding-left: 20px !important; /* Match content padding */
+    }    
+
+        
+
     /* Mobile-specific adjustments */
     @media (max-width: 767.98px) {
         /* Add padding to main content container */
@@ -125,8 +154,7 @@
     </div>
 </div>
 
-<!-- Main content and sidebar -->
-<div class="container mt-4">
+<div class="main-content-container mt-4"> <!-- Changed from container -->
     <div class="row">
         <div class="col-sm-8">
             {{ content }}
