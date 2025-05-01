@@ -4,20 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <!-- Responsive viewport meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS & JS (for carousel) -->
+    <!-- Bootstrap CSS & JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <style>
-    /* Reset for all elements */
     * {
         box-sizing: border-box;
     }
     
-    /* Remove margin and padding from the body and html */
     html, body {
         margin: 0;
         padding: 0;
@@ -26,124 +23,86 @@
         overflow-x: hidden;
     }
 
-    /* Full-width container */
+    /* Carousel Styles */
     .full-width-container {
         width: 100vw;
         position: relative;
         left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
+        transform: translateX(-50%);
     }
 
-    /* Carousel adjustments */
     #homeCarousel {
         width: 100%;
         margin: 0;
-        padding: 0;
     }
 
-    /* Carousel image styling */
     .carousel-item img {
         height: 600px;
         width: 100%;
         object-fit: cover;
     }
 
-    /* Remove any potential padding from Bootstrap containers */
-    .container, .container-fluid {
-        padding-left: 0;
-        padding-right: 0;
+    /* Content Area - Match Research Page Exactly */
+    .main-content-wrapper {
+        max-width: 900px;
+        margin: 2rem auto 0;
+        padding: 0 20px;
+        width: 100%;
     }
 
-    /* Ensure navbar doesn't introduce margins */
-    nav.navbar {
-        margin-bottom: 0 !important;
-    }
-
-    /* Consistent content container */
-    .main-content-container {
-        max-width: 900px; /* Match research page width */
-        margin: 0 auto;
-        padding: 0 20px; /* Match research page padding */
-    }
-
-    /* Override Bootstrap container */
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }    
-
-    /* Consistent footer styling */
+    /* Footer Fixes */
     footer {
+        width: 100%;
         padding: 20px 0;
-        text-align: left;
         margin-top: 40px;
         border-top: 1px solid #eee;
     }
-
-    /* Force left alignment */
+    
     footer .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px !important;
         text-align: left !important;
-        padding-left: 20px !important; /* Match content padding */
-    }    
+    }
 
-        
-
-    /* Mobile-specific adjustments */
+    /* Mobile Adjustments */
     @media (max-width: 767.98px) {
-        /* Add padding to main content container */
-        .container {
-            padding-left: 8px;
-            padding-right: 8px;
-        }
-        
-        /* Add margin to the top of content when below navbar */
-        .col-sm-8, .col-sm-4 {
-            margin-top: 10px;
-        }
-        
-        /* Reduce carousel height on mobile */
         .carousel-item img {
             height: 300px;
         }
         
-        /* Optional: Stack sidebar below content on mobile */
+        .main-content-wrapper {
+            padding: 0 15px;
+        }
+        
         .col-sm-8, .col-sm-4 {
             width: 100%;
+            margin-top: 15px;
         }
     }
-</style>
+    </style>
 </head>
 
 <body>
-<!-- Full-width carousel -->
+<!-- Carousel - Fixed active item -->
 <div class="full-width-container">
     <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="/static/img/image1.jpg" class="d-block w-100" alt="Image 1">
-                <div class="carousel-caption d-none d-md-block"></div>
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item">
                 <img src="/static/img/image2.jpg" class="d-block w-100" alt="Image 2">
-                <div class="carousel-caption d-none d-md-block"></div>
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item">
                 <img src="/static/img/image3.jpg" class="d-block w-100" alt="Image 3">
-                <div class="carousel-caption d-none d-md-block"></div>
-            
             </div>
-            <div class="carousel-item active">
-                <img src="/static/img/lung.png" class="d-block w-100" alt="lung">
-                <div class="carousel-caption d-none d-md-block"></div>
-            
+            <div class="carousel-item">
+                <img src="/static/img/lung.png" class="d-block w-100" alt="Lung">
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item">
                 <img src="/static/img/image4.jpg" class="d-block w-100" alt="Image 4">
-                <div class="carousel-caption d-none d-md-block"></div>
             </div>
-            <!-- Add more images here as necessary -->
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -154,7 +113,8 @@
     </div>
 </div>
 
-<div class="main-content-container mt-4"> <!-- Changed from container -->
+<!-- Content Area - Exact match to Research page -->
+<div class="main-content-wrapper">
     <div class="row">
         <div class="col-sm-8">
             {{ content }}
