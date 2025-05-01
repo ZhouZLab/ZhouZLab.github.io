@@ -194,3 +194,45 @@ a.navbar-brand[href="/"] {
         padding-right: 5px !important;
     }
 }
+
+
+/* ===== GLOBAL PAGE LAYOUT FIXES 5/1/2025 below===== */
+/* Force consistent content width across all pages */
+.main-content-wrapper {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+/* Footer alignment fix */
+footer {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Home page specific fixes */
+.home-page .main-content-container {
+    max-width: 900px !important;
+    margin: 2rem auto !important;
+    padding: 0 20px !important;
+}
+
+/* Force left alignment for footer text */
+footer .container,
+footer .container-fluid {
+    text-align: left !important;
+    padding-left: 20px !important;
+    max-width: 100% !important;
+}
+
+/* Carousel full-width fix */
+.full-width-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 2rem;
+}
