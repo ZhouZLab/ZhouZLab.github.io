@@ -195,7 +195,11 @@ a.navbar-brand[href="/"] {
     }
 }
 
-
+/* Add to custom.css */
+body.home-page .full-width-container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 
 
 
