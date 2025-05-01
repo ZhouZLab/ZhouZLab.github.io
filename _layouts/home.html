@@ -21,38 +21,46 @@
     }
 
     /* Full-width carousel container */
-    .full-width-container {
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        overflow: hidden;
-    }
+.full-width-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 
-    /* Carousel adjustments */
+/* Carousel adjustments */
+#homeCarousel {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 600px; /* Fixed height */
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767.98px) {
     #homeCarousel {
-        width: 100%;
-        margin: 0;
-        padding: 0;
+        height: 300px; /* Smaller height on mobile */
     }
-
-    .carousel-inner {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .carousel-item img {
-        width: 100vw; /* Force full viewport width */
-        height: auto; /* Maintain aspect ratio */
-        min-height: 600px; /* Fallback height */
-        object-fit: cover;
-        object-position: center;
-   }
+}
 
    /* Mobile adjustments */
    @media (max-width: 767.98px) {
