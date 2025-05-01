@@ -1,6 +1,6 @@
 ---
 title: The ZhouLab @ Temple University
-layout: home
+layout: home-with-sidebar  # Changed this line
 group: home
 ---
 
