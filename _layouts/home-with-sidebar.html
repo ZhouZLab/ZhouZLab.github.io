@@ -1,0 +1,66 @@
+{% comment %} Save this as 'home-with-sidebar.html' in your _layouts folder {% endcomment %}
+{% include header.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% comment %} Keep all your existing head content {% endcomment %}
+    <style>
+    /* Add ONLY these new styles to your existing home.html */
+    .two-column-wrapper {
+        display: flex;
+        margin-top: 2rem;
+    }
+    .main-content-col {
+        flex: 0 0 66.67%;
+        padding-right: 30px;
+        position: relative;
+    }
+    .sidebar-col {
+        flex: 0 0 33.33%;
+        padding-left: 30px;
+    }
+    .vertical-divider {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: #dee2e6;
+    }
+    @media (max-width: 767.98px) {
+        .two-column-wrapper { flex-direction: column; }
+        .main-content-col, .sidebar-col {
+            flex: 0 0 100%;
+            padding: 0;
+        }
+        .sidebar-col {
+            border-top: 1px solid #dee2e6;
+            margin-top: 2rem;
+            padding-top: 2rem;
+        }
+        .vertical-divider { display: none; }
+    }
+    </style>
+</head>
+
+<body>
+    {% comment %} Keep your existing carousel code {% endcomment %}
+    <div class="full-width-container">
+        <!-- Your carousel HTML here -->
+    </div>
+
+    {% comment %} Modified content area {% endcomment %}
+    <div class="container">
+        <div class="two-column-wrapper">
+            <div class="main-content-col">
+                {{ content }}
+                <div class="vertical-divider"></div>
+            </div>
+            <div class="sidebar-col">
+                {% include sidebar.html %}
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>
