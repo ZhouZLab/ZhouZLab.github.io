@@ -12,21 +12,18 @@ group: publications
 	 <a href="http://www.abd.com/" >  </a>
 </div>
 <style>
-  /* Mobile responsiveness - matches Research section */
+  /* Mobile responsiveness - Forces changes on small screens */
   @media (max-width: 768px) {
     .publication-section {
-      flex-direction: column; /* Ensures vertical stacking (if flex is used) */
+      overflow: hidden; /* Prevents horizontal scroll */
     }
-    
-    .forced-height-container {
-      height: 300px !important; /* Forces height reduction on mobile */
-      order: -1; /* Ensures image appears first (if in flex container) */
-      margin-bottom: 20px; /* Adds spacing below image */
-      width: 100%; /* Takes full width */
-      left: 0; /* Removes horizontal shift */
-      right: 0;
-      margin-left: 0; /* Resets negative margins */
-      margin-right: 0;
+    .publication-image-container {
+      height: 300px !important; /* Overrides inline style */
+      left: 0 !important; /* Removes horizontal shift */
+      right: 0 !important;
+      margin-left: 0 !important; /* Resets negative margins */
+      margin-right: 0 !important;
+      width: 100% !important; /* Fits screen width */
     }
   }
 </style>
