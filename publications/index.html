@@ -81,3 +81,24 @@ group: publications
 </div>
 {% endfor %}
 </div>
+
+<style>
+  /* Mobile responsiveness - matches Research section */
+  @media (max-width: 768px) {
+    .publication-section {
+      flex-direction: column; /* Ensures vertical stacking (if flex is used) */
+    }
+    
+    .forced-height-container {
+      height: 300px !important; /* Forces height reduction on mobile */
+      order: -1; /* Ensures image appears first (if in flex container) */
+      margin-bottom: 20px; /* Adds spacing below image */
+      width: 100%; /* Takes full width */
+      left: 0; /* Removes horizontal shift */
+      right: 0;
+      margin-left: 0; /* Resets negative margins */
+      margin-right: 0;
+    }
+  }
+</style>
+
