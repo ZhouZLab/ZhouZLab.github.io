@@ -11,6 +11,25 @@ group: publications
     </div>
 	 <a href="http://www.abd.com/" >  </a>
 </div>
+<style>
+  /* Mobile responsiveness - matches Research section */
+  @media (max-width: 768px) {
+    .publication-section {
+      flex-direction: column; /* Ensures vertical stacking (if flex is used) */
+    }
+    
+    .forced-height-container {
+      height: 300px !important; /* Forces height reduction on mobile */
+      order: -1; /* Ensures image appears first (if in flex container) */
+      margin-bottom: 20px; /* Adds spacing below image */
+      width: 100%; /* Takes full width */
+      left: 0; /* Removes horizontal shift */
+      right: 0;
+      margin-left: 0; /* Resets negative margins */
+      margin-right: 0;
+    }
+  }
+</style>
 <br>
 <h1>Selected Publications</h1> (full publications on <a href="https://scholar.google.com/citations?user=WFrvIc4AAAAJ&hl=en/" > Google Scholar) </a> 
 (# co-first author, ∗ corresponding author)
@@ -82,23 +101,5 @@ group: publications
 {% endfor %}
 </div>
 
-<style>
-  /* Mobile responsiveness - matches Research section */
-  @media (max-width: 768px) {
-    .publication-section {
-      flex-direction: column; /* Ensures vertical stacking (if flex is used) */
-    }
-    
-    .forced-height-container {
-      height: 300px !important; /* Forces height reduction on mobile */
-      order: -1; /* Ensures image appears first (if in flex container) */
-      margin-bottom: 20px; /* Adds spacing below image */
-      width: 100%; /* Takes full width */
-      left: 0; /* Removes horizontal shift */
-      right: 0;
-      margin-left: 0; /* Resets negative margins */
-      margin-right: 0;
-    }
-  }
-</style>
+
 
