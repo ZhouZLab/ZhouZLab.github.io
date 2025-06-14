@@ -4,12 +4,22 @@ layout: default
 group: publications
 ---
 <style>
-  /* Push content up from footer */
-  #publications {
-    margin-bottom: 200px;
+  /* Main content padding to prevent footer overlap */
+  .publications-content {
+    padding-bottom: 200px; /* Adjust this value as needed */
+  }
+  
+  /* Footer styling - keep your existing style */
+  footer {
+    background-color: rgb(57, 55, 55);
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
 </style>
-    <!-- ... rest of your publication content ... -->
 	  
 <div class="container px-2" style="max-width: 100%; text-align: left; padding: 0;">
     <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; height: 500px; overflow: hidden;">
