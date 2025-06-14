@@ -4,12 +4,18 @@ layout: default
 group: publications
 ---
 <style>
-  /* Main content padding to prevent footer overlap */
-  .publications-content {
-    padding-bottom: 200px; /* Adjust this value as needed */
+  /* Fix for footer overlap */
+  body {
+    position: relative;
+    min-height: 100vh;
   }
   
-  /* Footer styling - keep your existing style */
+  /* Main content container */
+  .container-fluid {
+    padding-bottom: 250px; /* Increased bottom padding */
+  }
+  
+  /* Your existing footer styling - unchanged */
   footer {
     background-color: rgb(57, 55, 55);
     width: 100vw;
