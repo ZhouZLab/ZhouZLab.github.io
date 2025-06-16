@@ -1,10 +1,16 @@
 name: "The ZhouLab @ Temple University"
-description: "This is the official web page for the ZhouLab at Temple University."
+description: "Research lab led by Dr. Zhengjie Zhou at Temple University. Focus areas: [nanomedicine, vascular biology, ARDS, lung injury, pulmonary diseases]."
 
 url: "https://zhouzlab.github.io"
 
+# SEO Optimization
+keywords: "Zhengjie Zhou, ZhouLab, Temple University, [nanomedicine, vascular biology, ARDS, lung injury, pulmonary diseases]"
+author: "Zhengjie Zhou"
+google_site_verification: "google3f8e48e801db6af3"  # Optional but recommended
+
+# Jekyll Settings
 paginate: 5
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-seo-tag]  # Added jekyll-seo-tag for automatic meta tags
 paginate_path: "news/page:num"
 
 permalink: pretty
