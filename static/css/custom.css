@@ -202,11 +202,11 @@ body.home-page .full-width-container {
 }
 
 :root {
-  font-size: 18px; /* Base size (default is 16px) */
+  font-size: 17px; /* Base size (default is 16px) */
 }
 
 body {
-  font-size: 1rem; /* Will now use 18px */
+  font-size: 1rem; /* Will now use 17px */
   line-height: 1.6; /* Better readability */
 }
 
