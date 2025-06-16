@@ -25,6 +25,14 @@ group: publications
     margin-left: -50vw;
     margin-right: -50vw;
   }
+
+/* New patent section styling */
+  .patent-section {
+    margin-top: 40px;
+  }
+  .patent-entry {
+    margin-bottom: 20px;
+  }
 </style>
 	  
 <div class="container px-2" style="max-width: 100%; text-align: left; padding: 0;">
@@ -103,6 +111,42 @@ group: publications
       </div>
 </div>
 {% endfor %}
+
+<!-- New Patents Section -->
+<div class="patent-section">
+  <h1>Patents</h1>
+  
+  <div class="patent-entry">
+    <div style="font-size: 108% !important;">
+      <strong>1. Patent Title Here</strong><br>
+      Inventors: List of Inventors<br>
+      Patent Number: <a href="[PATENT_LINK]">US12345678</a><br>
+      Filing Date: January 1, 2023<br>
+      Status: Granted/Pending
+    </div>
+    <div class="row" style="padding-top: - 5px; margin-top: -20px;">
+      <strong>&emsp; &emsp; &emsp;Access: &emsp;</strong>
+      <li><a href="[PATENT_LINK]">Patent Office Link</a> &emsp;</li>
+      <li><a href="[PDF_LINK]">Full Text PDF</a></li>
+    </div>
+  </div>
+
+  <!-- Add more patents as needed -->
+  <div class="patent-entry">
+    <div style="font-size: 108% !important;">
+      <strong>2. Another Patent Title</strong><br>
+      Inventors: List of Inventors<br>
+      Patent Number: <a href="[PATENT_LINK]">US87654321</a><br>
+      Filing Date: February 1, 2023<br>
+      Status: Pending
+    </div>
+    <div class="row" style="padding-top: - 5px; margin-top: -20px;">
+      <strong>&emsp; &emsp; &emsp;Access: &emsp;</strong>
+      <li><a href="[PATENT_LINK]">Patent Office Link</a> &emsp;</li>
+      <li><a href="[PDF_LINK]">Full Text PDF</a></li>
+    </div>
+  </div>
+</div>
 </div>
 
 
