@@ -2,7 +2,6 @@
 title: The ZhouLab @ Temple University
 layout: home-with-sidebar  # Changed this line
 group: home
-google_site_verification: j7wOwZ6gQ3BTNiPG9vmSBsDFwgr7DxRWMO728G6sdPE
 ---
 
 # Welcome to the ZhouLab
