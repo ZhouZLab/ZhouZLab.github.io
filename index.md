@@ -28,4 +28,4 @@ Our work was interviewed by a Science reportor at ACS Spring 2025 and the pre-pr
 
 
 
-_Check [here](https://zhouzlab.github.io/news/) for more updates from the ZhouLab_
+_Check [here](https://zhouzlab.github.io/news/) for more updates from the Zhou Lab_
