@@ -1,5 +1,5 @@
 ---
-title: The Zhou Lab @ Temple University
+title: The Zhou Lab | Temple University
 layout: home-with-sidebar  # Changed this line
 group: home
 ---
