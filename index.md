@@ -2,6 +2,11 @@
 title: The Zhou Lab  | Temple University
 layout: home-with-sidebar  # Changed this line
 group: home
+description: "Research lab led by Dr. Zhengjie Zhou at Temple University. Focus areas: nanomedicine, vascular biology, ARDS, lung injury, pulmonary diseases."
+url: "https://zhouzlab.github.io"
+keywords: "Zhengjie Zhou, zhengjie zhou, Zhou Lab, zhou lab, Temple University, nanomedicine, vascular biology, ARDS, lung injury, pulmonary diseases"
+author: "Zhengjie Zhou"
+google_site_verification: "google3f8e48e801db6af3"
 ---
 
 # Welcome to the Zhou Lab
